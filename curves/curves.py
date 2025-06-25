@@ -31,6 +31,14 @@ curves = [
         r'$r(\theta) = \exp{(\cos{\theta})} - 2\cos{(4\theta)} + \sin^5{(\theta/12)}$',
         "Fey's butterfly curve",
         'fey.png'
+    ),
+    Curve(
+        np.arange(-2*np.pi, 2 * np.pi, 0.01 * np.pi),
+        lambda t: np.sin(t) * np.cos(t) ** 2,
+        r'$\theta$',
+        r'$r(\theta) = \sin{(\theta)} \cos{(\theta)}^2$',
+        'Bifolium',
+        'bifolium_a1.png'
     )
 ]
 
